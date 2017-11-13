@@ -1,11 +1,7 @@
 <div align="center">
-  <a href="http://bingblue.com">
-    <img width="200" heigth="200" src="https://github.com/bingblue/group/blob/master/public/img/logo-all.png">
-  </a>
   <br>
-  <br>
-	<a href="https://www.npmjs.com/package/mu-tpl">
-		<img src="https://img.shields.io/npm/v/mu-tpl.svg">
+	<a href="https://www.npmjs.com/package/gulp-concat-same">
+		<img src="https://img.shields.io/npm/v/gulp-concat-same.svg">
 	</a>
 	<a href="https://standardjs.com">
 		<img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
@@ -13,18 +9,15 @@
   <a href="https://github.com/stylelint/stylelint">
 		<img src="https://img.shields.io/badge/css%20style-stylelint-brightgreen.svg">
 	</a>
-	<a href="https://gitter.im/mu-tpl/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link">
-		<img src="https://badges.gitter.im/mu-tpl/mu-tpl.svg">
-	</a>
 	<a href="https://jq.qq.com/?_wv=1027&k=5tyQDAd">
 		<img src="https://img.shields.io/badge/QQ%20Group-215259343-blue.svg">
 	</a>
   <h1>gulp-concat-same</h1>
   <br>
   <p>
-    Mu-tpl is a variety of framework scaffold generators, quick custom templates.
+    gulp-concat-same is gulp plugin that merges different extname of the same name file.
     <br>
-    合并相同文件不同后缀文件的gulp插件。
+    合并不同扩展名的相同名字文件的gulp插件。
   <p>
   <br>
   <br>
@@ -70,10 +63,10 @@ gulp.task('default', () =>
 
 key | default | description
 ----|---------|------------
-`prefix` | `` | 添加前缀,默认未空
+`prefix` | `` | 添加前缀,默认为空
 `suffix` | `.min` | 添加后缀,默认 `.min`
 
-## Mu-TPL 涉及技术
+## gulp-concat-same 涉及技术
 
 - [through2][1]: 对node.js原生stream.Transform进行了封装
 - [gulp-util][2]: 开发gulp插件的实用方法
@@ -81,7 +74,7 @@ key | default | description
 
 ## License
 
-**Mu-TPL** is licensed under the MIT. [View the license file](https://github.com/xiaomucool/gulp-concat-same/blob/master/LICENSE)
+**gulp-concat-same** is licensed under the MIT. [View the license file](https://github.com/xiaomucool/gulp-concat-same/blob/master/LICENSE)
 
 All Rights Reserved · Powered by : **小牧COOL**
 
