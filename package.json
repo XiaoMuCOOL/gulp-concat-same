@@ -1,0 +1,36 @@
+{
+  "name": "gulp-concat-same",
+  "version": "0.0.1",
+  "description": "合并相同名称不同后缀名文件的gulp插件",
+  "author": {
+    "name": "XiaoMuCOOL",
+    "url": "http://weibo.com/xiaomucool",
+    "QQ": "895355044"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "gulp --gulpfile test/test.gulpfile.js",
+    "lint": "standard --fix && stylelint --fix test/css/**.**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaoMuCOOL/gulp-concat-same.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "concat-same"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/XiaoMuCOOL/gulp-concat-same#readme",
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  },
+  "readme": "ERROR: No README data found!"
+}
