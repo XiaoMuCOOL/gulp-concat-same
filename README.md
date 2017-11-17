@@ -46,7 +46,7 @@ $ cnpm i gulp-concat-same -D
 ```javascript
 'use strict'
 const gulp = require('gulp')
-const same = require('../index')
+const same = require('gulp-concat-same')
 
 gulp.task('default', () =>
   gulp.src('css/**')
