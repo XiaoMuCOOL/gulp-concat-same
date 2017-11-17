@@ -28,15 +28,18 @@ function gulpConcatsame ({prefix = '', suffix = '.min'} = {}) {
       for (let key in fileList) {
         let newFile = fileList[key][0]
         if (fileList[key].length !== 1) {
-          let contentArr = fileList[key].map(file => {
+          let contentArr = fileList[key].map((file,index) => {
+            if (index !== 0) {
+              file.contents = new Buffer(file.contents.toString().replace(/@charset "UTF-8";/gi, ''))
+            }
             return file.contents
           })
           let concatContent = Buffer.concat(contentArr)
           let info = path.parse(newFile.path)
-          let newPath = info.dir + '/' + prefix + info.name + suffix + info.ext
+          let newPath = info.dir + '\\' + prefix + info.name + suffix + info.ext
           newFile = new gutil.File({
-            base: newFile.dir,
-            cwd: newFile.root,
+            base: newFile.base,
+            cwd: newFile.cwd,
             path: newPath,
             contents: concatContent
           })
