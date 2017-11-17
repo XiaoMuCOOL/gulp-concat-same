@@ -30,7 +30,10 @@ function gulpConcatsame ({prefix = '', suffix = '.min'} = {}) {
         if (fileList[key].length !== 1) {
           let contentArr = fileList[key].map((file,index) => {
             if (index !== 0) {
-              file.contents = new Buffer(file.contents.toString().replace(/@charset "UTF-8";/gi, ''))
+              file.contents = new Buffer(file.contents
+                  .toString()
+                  .replace(/@charset "UTF-8";/gi, '')
+                  .replace(/'use strict'/gi, ''))
             }
             return file.contents
           })
